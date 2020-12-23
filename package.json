@@ -1,0 +1,51 @@
+{
+  "name": "md-renderer",
+  "version": "0.0.0",
+  "description": "A simple markdown renderer",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha _tests/\"{,/**/}*.test.js\"",
+    "test:watch": "npm test -- -w",
+    "test:coverage": "nyc npm test",
+    "commit": "git-cz",
+    "lint": "./node_modules/.bin/eslint ./src",
+    "lint:fix": "npm run lint -- --fix",
+    "draft-release": "standard-version",
+    "draft-release:simulate": "npm run draft-release -- --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplymichael/md-renderer.git"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "readme.md",
+    "contributing.md",
+    "license.md"
+  ],
+  "author": "simplymichael <simplymichaelorji@gmail.com> (https://github.com/simplymichael)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simplymichael/md-renderer/issues"
+  },
+  "homepage": "https://github.com/simplymichael/md-renderer#readme",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "commitizen": "4.2.2",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.16.0",
+    "ghooks": "2.0.4",
+    "mocha": "8.2.1",
+    "nyc": "15.1.0",
+    "standard-version": "9.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run lint && npm run test:coverage"
+    }
+  }
+}
