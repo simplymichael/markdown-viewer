@@ -7,5 +7,6 @@ test-directory/
 .editorconfig
 .npmignore
 .travis.yml
+.md-renderer
 appveyor.yml
 CONTRIBUTING.md
