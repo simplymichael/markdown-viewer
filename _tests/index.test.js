@@ -5,12 +5,12 @@ const appRoot = require('app-root-path');
 const render = require('../src');
 const { expect } = chai;
 const { file, dir } = chaiFiles;
-const defaultOutputDir = '.md-renderer';
+const defaultOutputDir = '.md-viewer';
 
 chai.use(chaiFiles);
 
 describe('md-renderer', () => {
-  it('should create a ".md-renderer" directory at the root directory if no directory is passed in', () => {
+  it('should create a ".md-viewer" directory at the root directory if no directory is passed in', () => {
     render();
 
     expect(dir(`${appRoot}/${defaultOutputDir}`)).to.exist;

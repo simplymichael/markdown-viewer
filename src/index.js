@@ -12,9 +12,9 @@ const appRoot = require('app-root-path');
  *
  * @param file {string} absolute path to the file (optional), default: README.md
  * @param outputDir {string} absolute path to the output directory (optional)
- *   By default it saves the file to PROJECT_ROOT_DIR/.md-renderer/file.html
+ *   By default it saves the file to PROJECT_ROOT_DIR/.md-viewer/file.html
  *   If you are using this default,
- *   ensure to add .md-renderer to .gitignore and .npmignore files
+ *   ensure to add .md-viewer to .gitignore and .npmignore files
  * @param opts object with members:
  *   - open {boolean} if true, opens the generated HTML in default browser
  *
@@ -36,7 +36,7 @@ async function mdRenderer(file, outputDir, opts) {
   const basename = path.basename(file, '.md');
   const saveTo = outputDir.length > 0
     ? outputDir
-    : `${appRoot}/.md-renderer`;
+    : `${appRoot}/.md-viewer`;
   const htmlFile = `${saveTo}/${basename}.html`;
 
   write.sync(htmlFile, output); // Write the parsed output to HTML
