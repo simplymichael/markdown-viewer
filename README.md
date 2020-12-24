@@ -10,6 +10,17 @@ Check that your markdown files (**README.md**, **LICENSE.md**, **CONTRIBUTING.md
 are properly constructed on your local machine,
 rather than waiting until you push to discover markdown errors.
 
+# Table of Contents
+
+- **[Installation](#installation)**
+- **[Features](#features)**
+- **[Usage](#usage)**
+    - **[Options](#options)**
+    - **[Examples](#examples)**
+
+## Installation
+`npm install --save-dev md-viewer`
+
 ## Features
 
 - Generate HTML files (***.html***) from markdown (***.md***) files

@@ -13,5 +13,5 @@ test-directory/
 .env
 .data
 .DS_Store
-.md-renderer
+.md-viewer
 *.html
