@@ -1,6 +1,6 @@
 {
-  "name": "md-renderer",
-  "version": "0.0.0",
+  "name": "md-viewer",
+  "version": "1.0.0",
   "description": "A simple development-time markdown to HTML renderer",
   "main": "src/cli.js",
   "bin": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simplymichael/md-renderer.git"
+    "url": "git+https://github.com/simplymichael/md-viewer.git"
   },
   "keywords": [
     "markdown",
@@ -30,9 +30,9 @@
   "author": "simplymichael <simplymichaelorji@gmail.com> (https://github.com/simplymichael)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simplymichael/md-renderer/issues"
+    "url": "https://github.com/simplymichael/md-viewer/issues"
   },
-  "homepage": "https://github.com/simplymichael/md-renderer#readme",
+  "homepage": "https://github.com/simplymichael/md-viewer#readme",
   "devDependencies": {
     "chai": "4.2.0",
     "chai-files": "1.4.0",
