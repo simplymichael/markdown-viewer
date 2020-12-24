@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/simplymichael/markdown-viewer/compare/v1.0.0...v1.0.1) (2020-12-24)
+
+
+### Bug Fixes
+
+* **invocation:** update information on invoking the binary ([e635aac](https://github.com/simplymichael/markdown-viewer/commit/e635aac5447aaca49eb65072d38e661df1aa7e3c))
+
 ## 1.0.0 (2020-12-24)
 
 
