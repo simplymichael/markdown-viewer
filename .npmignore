@@ -8,5 +8,6 @@ test-directory/
 .npmignore
 .travis.yml
 .md-renderer
+*.html
 appveyor.yml
 CONTRIBUTING.md

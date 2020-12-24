@@ -52,6 +52,8 @@
   "dependencies": {
     "app-root-path": "3.0.0",
     "marked": "1.2.7",
+    "meow": "8.0.0",
+    "minimist": "1.2.5",
     "open": "7.3.0",
     "read-file": "0.2.0",
     "write": "2.0.0"
