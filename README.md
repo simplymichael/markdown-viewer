@@ -17,6 +17,7 @@ rather than waiting until you push to discover markdown errors.
 - **[Usage](#usage)**
     - **[Options](#options)**
     - **[Examples](#examples)**
+    - **[Using NPM scripts](#using-npm-scripts)**
 
 ## Installation
 `npm install --save-dev markdown-viewer`
@@ -29,7 +30,7 @@ rather than waiting until you push to discover markdown errors.
 
 ## Usage
 
-`markdown-viewer`
+`<project_dir>/node_modules/.bin/markdown-viewer [OPTIONS]`
 
 ### Options
 
@@ -41,6 +42,17 @@ rather than waiting until you push to discover markdown errors.
 
 ### Examples
 
-- `$ markdown-viewer`: generate **README.html** from **README.md** and output to ***.markdown-viewer/README.html***
-- `$ markdown-viewer --open`: generate **README.html**, output to ***.markdown-viewer/README.html***, and open in browser
-- `$ markdown-viewer --file CONTRIBUTING.md --output-dir docs --open`: generate **CONTRIBUTING.html**, output to ***docs/CONTRIBUTING.html***, and open in browser
+- `$ <project_dir>/node_modules/.bin/markdown-viewer`: generate **README.html** from **README.md** and output to ***.markdown-viewer/README.html***
+- `$ <project_dir>/node_modules/.bin/markdown-viewer --open`: generate **README.html**, output to ***.markdown-viewer/README.html***, and open in browser
+- `$ <project_dir>/node_modules/.bin/markdown-viewer --file CONTRIBUTING.md --output-dir docs --open`: generate **CONTRIBUTING.html**, output to ***docs/CONTRIBUTING.html***, and open in browser
+
+### Using NPM scripts
+You can add the following stanzas to the *scripts* section of your ***package.json*** file:
+- `"view-readme": "./node_modules/.bin/markdown-viewer -b",`
+- `"view-contributing": "./node_modules/.bin/markdown-viewer -f CONTRIBUTING.md -b",`
+- `"view-license": "./node_modules/.bin/markdown-viewer -f LICENSE.md -b"`
+
+Then you can run:
+- `npm run view-readme` to view the output of *README.md*
+- `npm run view-contributing` to view the output of the *CONTRIBUTING.md* file
+- `npm run view-license` to view the output of the *LICENSE.md* file
