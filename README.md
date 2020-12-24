@@ -1,4 +1,4 @@
-# Markdown Renderer
+# Markdown Viewer
 [![Travis CI](https://img.shields.io/travis/com/simplymichael/markdown-viewer)](https://travis-ci.com/github/simplymichael/markdown-viewer)
 [![Codecov](https://img.shields.io/codecov/c/github/simplymichael/markdown-viewer)](https://codecov.io/gh/simplymichael/markdown-viewer)
 [![npm](https://img.shields.io/npm/dw/markdown-viewer)](https://npm.im/markdown-viewer)
