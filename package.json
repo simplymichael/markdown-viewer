@@ -13,6 +13,7 @@
     "commit": "git-cz",
     "lint": "./node_modules/.bin/eslint ./src",
     "lint:fix": "npm run lint -- --fix",
+    "codecov": "codecov",
     "draft-release": "standard-version",
     "draft-release:simulate": "npm run draft-release -- --dry-run"
   },
@@ -36,6 +37,7 @@
   "devDependencies": {
     "chai": "4.2.0",
     "chai-files": "1.4.0",
+    "codecov": "3.8.1",
     "commitizen": "4.2.2",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.16.0",
