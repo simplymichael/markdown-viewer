@@ -1,8 +1,8 @@
 # Markdown Renderer
-[![Travis CI](https://img.shields.io/travis/com/simplymichael/md-viewer)](https://travis-ci.com/github/simplymichael/md-viewer)
-[![Codecov](https://img.shields.io/codecov/c/github/simplymichael/md-viewer)](https://codecov.io/gh/simplymichael/md-viewer)
-[![npm](https://img.shields.io/npm/dw/md-viewer)](https://npm.im/md-viewer)
-[![GitHub](https://img.shields.io/github/license/simplymichael/md-viewer)](https://github.com/simplymichael/md-viewer/LICENSE.md)
+[![Travis CI](https://img.shields.io/travis/com/simplymichael/markdown-viewer)](https://travis-ci.com/github/simplymichael/markdown-viewer)
+[![Codecov](https://img.shields.io/codecov/c/github/simplymichael/markdown-viewer)](https://codecov.io/gh/simplymichael/markdown-viewer)
+[![npm](https://img.shields.io/npm/dw/markdown-viewer)](https://npm.im/markdown-viewer)
+[![GitHub](https://img.shields.io/github/license/simplymichael/markdown-viewer)](https://github.com/simplymichael/markdown-viewer/LICENSE.md)
 
 A simple development-time markdown to HTML renderer.
 
@@ -19,7 +19,7 @@ rather than waiting until you push to discover markdown errors.
     - **[Examples](#examples)**
 
 ## Installation
-`npm install --save-dev md-viewer`
+`npm install --save-dev markdown-viewer`
 
 ## Features
 
@@ -29,18 +29,18 @@ rather than waiting until you push to discover markdown errors.
 
 ## Usage
 
-`md-viewer`
+`markdown-viewer`
 
 ### Options
 
 * `--file`,       `-r`: markdown file path, relative to project root; defaults to ***README.md***
-* `--output-dir`, `-o`: output directory, relative to project root; defaults to ***.md-viewer***.
-  Make sure to add ***.md-viewer*** to your ***.gitignore*** and ***.npmignore*** files
+* `--output-dir`, `-o`: output directory, relative to project root; defaults to ***.markdown-viewer***.
+  Make sure to add ***.markdown-viewer*** to your ***.gitignore*** and ***.npmignore*** files
 * `--open`,       `-b`: if set, opens the generated HTML in the default browser
 * `--help`,       `-h`: show help document
 
 ### Examples
 
-- `$ md-viewer`: generate **README.html** from **README.md** and output to ***.md-viewer/README.html***
-- `$ md-viewer --open`: generate **README.html**, output to ***.md-viewer/README.html***, and open in browser
-- `$ md-viewer --file CONTRIBUTING.md --output-dir docs --open`: generate **CONTRIBUTING.html**, output to ***docs/CONTRIBUTING.html***, and open in browser
+- `$ markdown-viewer`: generate **README.html** from **README.md** and output to ***.markdown-viewer/README.html***
+- `$ markdown-viewer --open`: generate **README.html**, output to ***.markdown-viewer/README.html***, and open in browser
+- `$ markdown-viewer --file CONTRIBUTING.md --output-dir docs --open`: generate **CONTRIBUTING.html**, output to ***docs/CONTRIBUTING.html***, and open in browser

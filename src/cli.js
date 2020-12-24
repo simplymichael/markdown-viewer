@@ -4,7 +4,7 @@ const meow = require('meow');
 const minimist = require('minimist');
 const appRoot = require('app-root-path');
 const render = require('.');
-const defaultOutputDir = '.md-viewer';
+const defaultOutputDir = '.markdown-viewer';
 const opts = minimist(process.argv.slice(2), {
   string: ['file'],
   boolean: ['open'],
@@ -17,17 +17,17 @@ const open = opts.open;
 
 meow(`
   Usage:
-    md-viewer
+    markdown-viewer
 
     Options
       --file,       -r  markdown file path, relative to project root; defaults to "README.md"
-      --output-dir, -o output directory, relative to project root; defaults to ".md-viewer"
+      --output-dir, -o output directory, relative to project root; defaults to ".markdown-viewer"
       --open,       -b  if set, opens the generated HTML in the default browser
       --help,       -h show this help document
 
     Examples
-      $ md-viewer (generate README.html from README.md and output to ".md-viewer/README.html")
-      $ md-viewer --file CONTRIBUTING.md --output-dir docs --open (genereate CONTRIBUTING.html, output to "docs/CONTRIBUTING.html", and open in browser)
+      $ markdown-viewer (generate README.html from README.md and output to ".markdown-viewer/README.html")
+      $ markdown-viewer --file CONTRIBUTING.md --output-dir docs --open (genereate CONTRIBUTING.html, output to "docs/CONTRIBUTING.html", and open in browser)
 `, {
   flags: {
     file: {
