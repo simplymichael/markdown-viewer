@@ -1,8 +1,11 @@
 {
   "name": "md-renderer",
   "version": "0.0.0",
-  "description": "A simple markdown renderer",
-  "main": "src/index.js",
+  "description": "A simple development-time markdown to HTML renderer",
+  "main": "src/cli.js",
+  "bin": {
+    "md-viewer": "src/cli.js"
+  },
   "scripts": {
     "test": "mocha _tests/\"{,/**/}*.test.js\"",
     "test:watch": "npm test -- -w",
